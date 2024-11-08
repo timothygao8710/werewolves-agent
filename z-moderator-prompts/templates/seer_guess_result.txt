@@ -1,0 +1,6 @@
+Seer guess result:
+{% if is_wolf %}
+    Nice! : {{player}} you guessed it right player -> '{{selected_player}}' is a wolf.
+{% else %}
+    Hmm! '{{player}}' you are off the mark by bit. player -> '{{selected_player}}' is not a wolf.
+{% endif %}

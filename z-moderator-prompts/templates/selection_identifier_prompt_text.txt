@@ -1,0 +1,6 @@
+I am a moderator in a werewolf game. I have asked a player: '{player_name}' to select a one name among the following names -> [ {{ available_players }} ]
+This is what I asked : """ {{ question }} """
+player's response is as follows -> """ {{ player_response }} """
+which name has the player selected ?. 
+if player has selected any name which not in [ {{ available_players }} ] respond NO_SELET else respond with just player name that user has selected.
+

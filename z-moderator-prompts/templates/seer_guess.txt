@@ -1,0 +1,2 @@
+Seer guess: 
+Hello seer {{ player }}, please guess which fellow player in the game is a wolf.here is the list of alive players ->  {{ alive_players }} . Just take a wild guess and pick a player if you can't reason for now. 

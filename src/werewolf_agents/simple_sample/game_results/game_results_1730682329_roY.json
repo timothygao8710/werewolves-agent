@@ -1,0 +1,125 @@
+{
+  "activity_id": "1730682329_roY",
+  "players": [
+    "James",
+    "Abhimanyu",
+    "Wei",
+    "Haruto",
+    "Hiroshi",
+    "Olivia",
+    "Astrid",
+    "Myra"
+  ],
+  "game_status": "ended",
+  "player_roles": {
+    "James": "wolf",
+    "Haruto": "wolf",
+    "Olivia": "seer",
+    "Abhimanyu": "doctor",
+    "Myra": "villager",
+    "Hiroshi": "villager",
+    "Wei": "villager",
+    "Astrid": "villager"
+  },
+  "success_game_stats": {
+    "winner": "WOLVES",
+    "vote_history": {
+      "wolf_votes": {
+        "0": {
+          "James": "Wei",
+          "Haruto": "Wei"
+        },
+        "1": {
+          "Haruto": "Olivia"
+        },
+        "2": {
+          "Haruto": "Olivia"
+        },
+        "3": {
+          "Haruto": "Astrid"
+        }
+      },
+      "doctors_save": {
+        "0": "Myra",
+        "1": "Olivia",
+        "2": null,
+        "3": null
+      },
+      "alive_players_votes": {
+        "0": {
+          "Astrid": "James",
+          "Myra": "James",
+          "Olivia": "James",
+          "James": "Olivia",
+          "Haruto": "James",
+          "Hiroshi": "James",
+          "Abhimanyu": "James"
+        },
+        "1": {
+          "Abhimanyu": "Myra",
+          "Astrid": "Myra",
+          "Haruto": "Abhimanyu",
+          "Hiroshi": "Abhimanyu",
+          "Olivia": "Abhimanyu",
+          "Myra": "Abhimanyu"
+        },
+        "2": {
+          "Haruto": "Myra",
+          "Myra": "Hiroshi",
+          "Astrid": "Myra",
+          "Hiroshi": "Myra"
+        }
+      }
+    },
+    "total_rounds": 3,
+    "round_wise_alive_players": {
+      "0": [
+        "Abhimanyu",
+        "Haruto",
+        "Hiroshi",
+        "Olivia",
+        "Astrid",
+        "Myra"
+      ],
+      "1": [
+        "Haruto",
+        "Hiroshi",
+        "Olivia",
+        "Astrid",
+        "Myra"
+      ],
+      "2": [
+        "Haruto",
+        "Hiroshi",
+        "Astrid"
+      ]
+    },
+    "last_standing_players": [
+      "Haruto",
+      "Hiroshi"
+    ],
+    "player_errors": {}
+  },
+  "failure_game_stats": null,
+  "running_game_stats": null,
+  "logs": {
+    "Abhimanyu": "transcripts/Abhimanyu_1730682329_roY_log.txt",
+    "Wei": "transcripts/Wei_1730682329_roY_log.txt",
+    "Haruto": "transcripts/Haruto_1730682329_roY_log.txt",
+    "Hiroshi": "transcripts/Hiroshi_1730682329_roY_log.txt",
+    "Olivia": "transcripts/Olivia_1730682329_roY_log.txt",
+    "Astrid": "transcripts/Astrid_1730682329_roY_log.txt",
+    "Myra": "transcripts/Myra_1730682329_roY_log.txt",
+    "James": "transcripts/James_1730682329_roY_log.txt"
+  },
+  "transcripts": {
+    "Abhimanyu": "transcripts/Abhimanyu_1730682329_roY_transcript.jsonl",
+    "Wei": "transcripts/Wei_1730682329_roY_transcript.jsonl",
+    "Haruto": "transcripts/Haruto_1730682329_roY_transcript.jsonl",
+    "Hiroshi": "transcripts/Hiroshi_1730682329_roY_transcript.jsonl",
+    "Olivia": "transcripts/Olivia_1730682329_roY_transcript.jsonl",
+    "Astrid": "transcripts/Astrid_1730682329_roY_transcript.jsonl",
+    "Myra": "transcripts/Myra_1730682329_roY_transcript.jsonl",
+    "James": "transcripts/James_1730682329_roY_transcript.jsonl"
+  }
+}

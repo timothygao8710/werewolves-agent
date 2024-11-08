@@ -1,0 +1,6 @@
+Day End:
+day elimination : Player -> '{{eliminated_player}}' was eliminated by the vote today. Their role was -> '{{eliminated_player_role}}'.
+{% if is_game_ended %}
+    The game has ended.
+    Reason: {{ game_end_reason }}
+{% endif %}

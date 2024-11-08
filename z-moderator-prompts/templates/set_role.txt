@@ -1,0 +1,2 @@
+Role setting: 
+Hello {{player}} you are now playing the game werewolf with the role -> '{{role}}' in the game. Please keep this information discreet.

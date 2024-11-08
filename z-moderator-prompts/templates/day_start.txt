@@ -1,0 +1,16 @@
+Day start:
+
+Hello players, Good Morning. Please wake up.
+
+{% if eliminated_villager == "" %}
+    Every one from yesterday has made it to today.  looks like the doctor has saved a player from elimination.
+{% else %}
+    villager dead : Alas!,A villager player has been eliminated by the wolves. his name is -> '{{eliminated_villager}}'
+
+   {% if is_game_ended  %}
+       The Game has ended because {{ game_end_reason }}     
+   {% else %}
+       Let me ask one by one about who are the wolfs among overselves. 
+   {% endif %}  
+{% endif %}
+

@@ -1,0 +1,5 @@
+Wolf vote retry:
+hello {{ delegatte_player }} I was not able to unerstand which vilager you tried to eliminate. please vote again 
+You have to select one player. if today is first day , take random guess but please vote to eliminate one player. 
+
+here are the alive players for this night ->  {{ alive_players }} , anwser the choice in few words.

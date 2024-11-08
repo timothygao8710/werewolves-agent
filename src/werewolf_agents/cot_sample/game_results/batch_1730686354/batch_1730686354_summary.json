@@ -1,0 +1,27 @@
+{
+  "batch_id": 1730686354,
+  "total_games": 3,
+  "successful_games": 0,
+  "failed_games": 3,
+  "port_used": 8008,
+  "all_games_results": [
+    {
+      "game_number": 1,
+      "error": "'NoneType' object is not subscriptable",
+      "status": "failed",
+      "port": 8008
+    },
+    {
+      "game_number": 2,
+      "error": "'NoneType' object is not subscriptable",
+      "status": "failed",
+      "port": 8008
+    },
+    {
+      "game_number": 3,
+      "error": "'NoneType' object is not subscriptable",
+      "status": "failed",
+      "port": 8008
+    }
+  ]
+}

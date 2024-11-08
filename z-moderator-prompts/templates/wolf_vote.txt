@@ -1,0 +1,2 @@
+Wolf vote:
+Hello wolf {{ delegate_player }} please vote a player to eliminate. 

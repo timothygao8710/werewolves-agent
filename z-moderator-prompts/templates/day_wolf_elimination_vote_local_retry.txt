@@ -1,0 +1,3 @@
+Day vote retry:
+Hello {{ delegatte_player }} I was not able to understand who you are choosing to vote out of the game. Could you please vote again? Remember to respond with only one player's name who you wish to vote for elimination.
+here are the players who are still alive in game today ->  {{ alive_players }}

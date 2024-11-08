@@ -1,0 +1,3 @@
+Doctor save retry: 
+Hello {{ player }} I was not able to understand who you choose to save. Please tell me which player you would like to try to save. 
+Here are the players who are still alive this night :  {{  alive_players }}

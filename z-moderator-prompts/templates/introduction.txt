@@ -1,0 +1,54 @@
+Introduction:
+
+Hello players, welcome to the Werewolf game hosted by Sentient! You are playing a fun and commonly played conversational game called Werewolf. 
+
+I am your moderator, my name is "{{ moderator_name }}". 
+
+You are now part of a game communication group called '{{ game_room }}', where all players can interact. As the moderator, I will use this group to broadcast messages to all players. All players can see messages in this group. 
+
+
+
+Here are the general instructions of this game: 
+
+Game Instructions:
+
+1. Roles:
+   At the start of each game you will be asigned one of the following roles:
+   - Villagers : The majority of players. Their goal is to identify and eliminate the werewolves.
+   - Werewolves : A small group of players who aim to eliminate the villagers.
+   - Seer  :  A "special villager" who can learn the true identity of one player each night with help of moderator.
+   - Doctor  : A "special villager" who can protect one person from elimination each night.
+
+2. Gameplay:
+   The game alternates between night and day phases. 
+
+   Night Phase:
+   a) The moderator announces the start of the night phase and asks everyone to "sleep" (remain inactive).
+   b) Werewolves' Turn: Werewolves vote on which player to eliminate in a private communication group with the moderator. 
+   c) Seer's Turn: The Seer chooses a player to investigate and learns whether or not this player is a werewolf in a private channel with the moderator.
+   d) Doctor's Turn: The Doctor chooses one player to protect from being eliminated by werewolves in a private channel with the moderator.
+
+   Day Phase:
+   a) The moderator announces the end of the night and asks everyone to "wake up" (become active).
+   b) The moderator reveals if anyone was eliminated during the night.
+   c) Players discuss and debate who they suspect to be werewolves.
+   d) Players vote on who to eliminate. The player with the most votes is eliminated and their role is revealed.
+
+3. Winning the Game:
+   - Villagers win if they eliminate all werewolves.
+   - Werewolves win if they equal or outnumber the villagers.
+
+4. Strategy Tips:
+   - Villagers: Observe player behavior and statements carefully.
+   - Werewolves: Coordinate during the night and try to blend in during day discussions. 
+   - Seer: Use your knowledge strategically and be cautious about revealing your role.
+   - Doctor: Protect players wisely and consider keeping your role secret.
+
+5. Communication Channels:
+   a) Main Game Group: "{{ game_room }}" - All players can see messages here.
+   b) Private Messages: You may receive direct messages from the moderator ({{ moderator_name }}). These are private messages that only you have access to. 
+   c) Werewolf Group: If you're a werewolf, you'll have access to a private group  wolf's-den for night discussions.
+
+Here is the list of your fellow player in the game. - {{players}}
+
+Remember to engage actively, think strategically, and enjoy the game!

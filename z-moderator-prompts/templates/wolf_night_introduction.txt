@@ -1,0 +1,15 @@
+Wolf night: 
+{% if is_first_night %}
+Hello wolfs I have created this new private group between wolfs called "wolfs-group" . 
+
+I will use this group to ask you to vote a player to eliminate every night
+
+{%else%}
+
+Hello wolfs another day has passed and night has started. Lets start the process of voting to eliminate a player.
+
+{% endif %}
+
+Here are the alive villager players for this night ->  {{players}}
+
+

@@ -1,0 +1,107 @@
+{
+  "activity_id": "1730685691_Jve",
+  "players": [
+    "Chagent",
+    "vihaan",
+    "Yuki",
+    "Olivia",
+    "Hiroshi",
+    "Ingrid",
+    "Chen",
+    "Wei"
+  ],
+  "game_status": "ended",
+  "player_roles": {
+    "Chen": "wolf",
+    "Yuki": "wolf",
+    "Hiroshi": "seer",
+    "Ingrid": "doctor",
+    "Wei": "villager",
+    "Chagent": "villager",
+    "Olivia": "villager",
+    "vihaan": "villager"
+  },
+  "success_game_stats": {
+    "winner": "WOLVES",
+    "vote_history": {
+      "wolf_votes": {
+        "0": {
+          "Yuki": "Wei",
+          "Chen": "Wei"
+        },
+        "1": {
+          "Yuki": "Chagent",
+          "Chen": "Ingrid"
+        }
+      },
+      "doctors_save": {
+        "0": "Hiroshi",
+        "1": "Yuki"
+      },
+      "alive_players_votes": {
+        "0": {
+          "Olivia": "Hiroshi",
+          "Hiroshi": "Olivia",
+          "Ingrid": "Hiroshi",
+          "Yuki": "Hiroshi",
+          "Chagent": "Hiroshi",
+          "Chen": "Hiroshi",
+          "vihaan": "Hiroshi"
+        },
+        "1": {
+          "vihaan": "Ingrid",
+          "Ingrid": "Chen",
+          "Chen": "Ingrid",
+          "Olivia": "Ingrid",
+          "Yuki": "Ingrid"
+        }
+      }
+    },
+    "total_rounds": 2,
+    "round_wise_alive_players": {
+      "0": [
+        "Chagent",
+        "vihaan",
+        "Yuki",
+        "Olivia",
+        "Ingrid",
+        "Chen"
+      ],
+      "1": [
+        "vihaan",
+        "Yuki",
+        "Olivia",
+        "Chen"
+      ]
+    },
+    "last_standing_players": [
+      "vihaan",
+      "Yuki",
+      "Olivia",
+      "Chen"
+    ],
+    "player_errors": {}
+  },
+  "failure_game_stats": null,
+  "running_game_stats": null,
+  "logs": {
+    "vihaan": "transcripts/vihaan_1730685691_Jve_log.txt",
+    "Yuki": "transcripts/Yuki_1730685691_Jve_log.txt",
+    "Olivia": "transcripts/Olivia_1730685691_Jve_log.txt",
+    "Hiroshi": "transcripts/Hiroshi_1730685691_Jve_log.txt",
+    "Ingrid": "transcripts/Ingrid_1730685691_Jve_log.txt",
+    "Chen": "transcripts/Chen_1730685691_Jve_log.txt",
+    "Wei": "transcripts/Wei_1730685691_Jve_log.txt",
+    "Chagent": "transcripts/Chagent_1730685691_Jve_log.txt"
+  },
+  "transcripts": {
+    "vihaan": "transcripts/vihaan_1730685691_Jve_transcript.jsonl",
+    "Yuki": "transcripts/Yuki_1730685691_Jve_transcript.jsonl",
+    "Olivia": "transcripts/Olivia_1730685691_Jve_transcript.jsonl",
+    "Hiroshi": "transcripts/Hiroshi_1730685691_Jve_transcript.jsonl",
+    "Ingrid": "transcripts/Ingrid_1730685691_Jve_transcript.jsonl",
+    "Chen": "transcripts/Chen_1730685691_Jve_transcript.jsonl",
+    "Wei": "transcripts/Wei_1730685691_Jve_transcript.jsonl",
+    "Chagent": "transcripts/Chagent_1730685691_Jve_transcript.jsonl"
+  }
+}

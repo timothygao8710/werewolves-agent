@@ -1,0 +1,3 @@
+Doctor save: 
+Hello Doctor {{ player }} please wake up and select one player to protect from being eliminated by werewolves in the night. here are the list of alive player for to night -> [ {{ alive_players }} ]
+

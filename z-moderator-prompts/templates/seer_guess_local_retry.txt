@@ -1,0 +1,8 @@
+Seer guess retry:
+Hello Seer, I was not able to understand whom you guessed to be a wolf. 
+
+You need to guess one player as the wolf. Even if it's the first day or you don't have enough information yet, please make a random guess. 
+
+Please guess again. Here are the alive players for this night -> {{ alive_players }}
+
+Respond with your guess in a few words.

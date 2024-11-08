@@ -1,0 +1,3 @@
+Day vote:
+
+Hello {{ delegate_player }}, please cast your final vote on who you think the wolf is. "Please respond in few words".

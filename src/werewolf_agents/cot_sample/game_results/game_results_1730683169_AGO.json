@@ -1,0 +1,126 @@
+{
+  "activity_id": "1730683169_AGO",
+  "players": [
+    "Chagent",
+    "Yuki",
+    "Luca",
+    "Elise",
+    "Fredrik",
+    "Klaus",
+    "Ramesh",
+    "Emily"
+  ],
+  "game_status": "ended",
+  "player_roles": {
+    "Fredrik": "wolf",
+    "Yuki": "wolf",
+    "Ramesh": "seer",
+    "Chagent": "doctor",
+    "Emily": "villager",
+    "Klaus": "villager",
+    "Elise": "villager",
+    "Luca": "villager"
+  },
+  "success_game_stats": {
+    "winner": "VILLAGERS",
+    "vote_history": {
+      "wolf_votes": {
+        "0": {
+          "Yuki": "Luca",
+          "Fredrik": "Elise"
+        },
+        "1": {
+          "Yuki": "Klaus",
+          "Fredrik": "Emily"
+        },
+        "2": {
+          "Fredrik": "Emily"
+        }
+      },
+      "doctors_save": {
+        "0": "Yuki",
+        "1": "Klaus",
+        "2": "Emily"
+      },
+      "alive_players_votes": {
+        "0": {
+          "Fredrik": "Ramesh",
+          "Ramesh": "Yuki",
+          "Yuki": "Ramesh",
+          "Elise": "Ramesh",
+          "Klaus": "Ramesh",
+          "Chagent": "Ramesh",
+          "Emily": "Ramesh"
+        },
+        "1": {
+          "Chagent": "Fredrik",
+          "Emily": "Yuki",
+          "Yuki": "Fredrik",
+          "Klaus": "Yuki",
+          "Elise": "Yuki",
+          "Fredrik": "Yuki"
+        },
+        "2": {
+          "Fredrik": "Klaus",
+          "Chagent": "Fredrik",
+          "Elise": "Klaus",
+          "Emily": "Fredrik",
+          "Klaus": "Fredrik"
+        }
+      }
+    },
+    "total_rounds": 3,
+    "round_wise_alive_players": {
+      "0": [
+        "Chagent",
+        "Yuki",
+        "Elise",
+        "Fredrik",
+        "Klaus",
+        "Emily"
+      ],
+      "1": [
+        "Chagent",
+        "Elise",
+        "Fredrik",
+        "Klaus",
+        "Emily"
+      ],
+      "2": [
+        "Chagent",
+        "Elise",
+        "Klaus",
+        "Emily"
+      ]
+    },
+    "last_standing_players": [
+      "Chagent",
+      "Elise",
+      "Klaus",
+      "Emily"
+    ],
+    "player_errors": {}
+  },
+  "failure_game_stats": null,
+  "running_game_stats": null,
+  "logs": {
+    "Yuki": "transcripts/Yuki_1730683169_AGO_log.txt",
+    "Luca": "transcripts/Luca_1730683169_AGO_log.txt",
+    "Elise": "transcripts/Elise_1730683169_AGO_log.txt",
+    "Fredrik": "transcripts/Fredrik_1730683169_AGO_log.txt",
+    "Klaus": "transcripts/Klaus_1730683169_AGO_log.txt",
+    "Ramesh": "transcripts/Ramesh_1730683169_AGO_log.txt",
+    "Emily": "transcripts/Emily_1730683169_AGO_log.txt",
+    "Chagent": "transcripts/Chagent_1730683169_AGO_log.txt"
+  },
+  "transcripts": {
+    "Yuki": "transcripts/Yuki_1730683169_AGO_transcript.jsonl",
+    "Luca": "transcripts/Luca_1730683169_AGO_transcript.jsonl",
+    "Elise": "transcripts/Elise_1730683169_AGO_transcript.jsonl",
+    "Fredrik": "transcripts/Fredrik_1730683169_AGO_transcript.jsonl",
+    "Klaus": "transcripts/Klaus_1730683169_AGO_transcript.jsonl",
+    "Ramesh": "transcripts/Ramesh_1730683169_AGO_transcript.jsonl",
+    "Emily": "transcripts/Emily_1730683169_AGO_transcript.jsonl",
+    "Chagent": "transcripts/Chagent_1730683169_AGO_transcript.jsonl"
+  }
+}
