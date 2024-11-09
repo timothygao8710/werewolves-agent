@@ -51,7 +51,8 @@ class CoTAgent(IReactiveAgent):
     # 3. Pay attention to the seer and doctor's potential actions.
     # 4. Defend yourself if accused, but don't be too aggressive."""
     
-    WOLF_PROMPT = """You are a wolf in a game of Werewolf. Your goal is to eliminate villagers without being detected. Consider the following:
+    WOLF_PROMPT = """
+    You are a wolf in a game of Werewolf. Your goal is to eliminate villagers without being detected. Consider the following:
     1. Blend in with villagers during day discussions.
     2. Coordinate with other werewolves to choose a target.
     3. Pay attention to the seer and doctor's potential actions.
@@ -109,14 +110,56 @@ class CoTAgent(IReactiveAgent):
             f"WerewolfAgent initialized with name: {name}, description: {description}, and config: {config}"
         )
         self.game_intro = None
+    
+    
+    ## CUSTOM FUNCTION
+    async def add_to_history(self, chat_entry):
+        history = self._summarize_game_history()
+        
+        prompt = f'''
+        
+        Chat History:
+        
+        {history}
+        
+        New Entry:
+        
+        {chat_entry}
+        
+        '''
+        
+        response = self.openai_client.chat.completions.create(
+            model=self.model,
+            messages=[
+                {"role": "system", "content": f"You are an expert {self.role} player in a Werewolf game. Based on the following new information, determine if it contributes new information and should be noted down. Say yes or no."},
+                {"role": "user", "content": prompt}
+            ]
+        )
+        
+        ans = self.openai_client.chat.completions.create(
+            model=self.model,
+            messages=[
+                {"role": "system", "content": f"Determine if the following paragraph concludes if new information should be noted down - if it's positive or negative. ***ONLY ANSWER WITH YES OR NO***"},
+                {"role": "user", "content": prompt}
+            ]
+        )
+        
+        if ans != 'NO':
+            self.game_history.append(chat_entry)
+        else:
+            print("**NOT INCLUDING INFO**", response)
 
     async def async_notify(self, message: ActivityMessage):
         logger.info(f"ASYNC NOTIFY called with message: {message}")
+        
         if message.header.channel_type == MessageChannelType.DIRECT:
             user_messages = self.direct_messages.get(message.header.sender, [])
             user_messages.append(message.content.text)
             self.direct_messages[message.header.sender] = user_messages
-            self.game_history.append(f"[From - {message.header.sender}| To - {self._name} (me)| Direct Message]: {message.content.text}")
+            
+            # self.game_history.append(f"[From - {message.header.sender}| To - {self._name} (me)| Direct Message]: {message.content.text}")
+            self.add_to_history(f"[From - {message.header.sender}| To - {self._name} (me)| Direct Message]: {message.content.text}")
+            
             if not len(user_messages) > 1 and message.header.sender == self.MODERATOR_NAME:
                 self.role = self.find_my_role(message)
                 logger.info(f"Role found for user {self._name}: {self.role}")
@@ -124,7 +167,10 @@ class CoTAgent(IReactiveAgent):
             group_messages = self.group_channel_messages.get(message.header.channel, [])
             group_messages.append((message.header.sender, message.content.text))
             self.group_channel_messages[message.header.channel] = group_messages
+            
+            # self.game_history.append(f"[From - {message.header.sender}| To - Everyone| Group Message in {message.header.channel}]: {message.content.text}")
             self.game_history.append(f"[From - {message.header.sender}| To - Everyone| Group Message in {message.header.channel}]: {message.content.text}")
+            
             # if this is the first message in the game channel, the moderator is sending the rules, store them
             if message.header.channel == self.GAME_CHANNEL and message.header.sender == self.MODERATOR_NAME and not self.game_intro:
                 self.game_intro = message.content.text
@@ -206,7 +252,7 @@ Current game situation (including your past thoughts and actions):
         response = self.openai_client.chat.completions.create(
             model=self.model,
             messages=[
-                {"role": "system", "content": f"You are a {self.role} in a Werewolf game."},
+                {"role": "system", "content": f"You are an expert {self.role} player in a Werewolf game."},
                 {"role": "user", "content": prompt}
             ]
         )
@@ -270,7 +316,7 @@ Reflect on your final action given the situation and provide any criticisms. Ans
         prompt = f"""{role_prompt}
 
 Current game situation (including past thoughts and actions):
-{game_situation}
+{self._summarize_game_history(game_situation)}
 
 Your thoughts:
 {inner_monologue}
@@ -293,6 +339,18 @@ Based on your thoughts, the current situation, and your reflection on the initia
         
         return response.choices[0].message.content.strip("\n ")
     
+    def get_role_prompt(self):
+        if self.role == 'wolf':
+            return self.WOLF_PROMPT
+        
+        if self.role == 'doctor':
+            return self.DOCTOR_PROMPT
+        
+        if self.role == 'seer':
+            return self.SEER_PROMPT
+        
+        return self.VILLAGER_PROMPT
+    
     def _summarize_game_history(self):
 
         self.detailed_history = "\n".join(self.game_history)
@@ -301,7 +359,15 @@ Based on your thoughts, the current situation, and your reflection on the initia
         # llm will summarize the game history and provide a summary of the game so far
         # summarized game history is used for current situation
 
-        pass
+        response = self.openai_client.chat.completions.create(
+            model=self.model,
+            messages=[
+                {"role": "system", "content": f"You are an expert player in the game of werewolf. Summarize the following game history into bullet points. Put important information in the front and DO NOT EXCLUDE IMPORTANT INFORMATION."},
+                {"role": "user", "content": f"{self.detailed_history}"}
+            ]
+        )
+        
+        return response
 
 
     def _get_response_for_seer_guess(self, message):

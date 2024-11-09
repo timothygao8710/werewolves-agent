@@ -1,0 +1,106 @@
+{
+  "activity_id": "1731113806_kBY",
+  "players": [
+    "Chagent",
+    "Anna",
+    "Chen",
+    "Abhimanyu",
+    "Elise",
+    "Wei",
+    "Myra",
+    "Luca"
+  ],
+  "game_status": "ended",
+  "player_roles": {
+    "Chagent": "wolf",
+    "Anna": "wolf",
+    "Abhimanyu": "seer",
+    "Myra": "doctor",
+    "Elise": "villager",
+    "Wei": "villager",
+    "Chen": "villager",
+    "Luca": "villager"
+  },
+  "success_game_stats": {
+    "winner": "VILLAGERS",
+    "vote_history": {
+      "wolf_votes": {
+        "0": {
+          "Chagent": "Myra",
+          "Anna": "Myra"
+        },
+        "1": {
+          "Anna": "Abhimanyu"
+        }
+      },
+      "doctors_save": {
+        "0": "Wei",
+        "1": null
+      },
+      "alive_players_votes": {
+        "0": {
+          "Luca": "Chagent",
+          "Chen": "Chagent",
+          "Elise": "Chagent",
+          "Abhimanyu": "Chagent",
+          "Chagent": "Anna",
+          "Wei": "Chagent",
+          "Anna": "Abhimanyu"
+        },
+        "1": {
+          "Luca": "Anna",
+          "Elise": "Anna",
+          "Anna": "Luca",
+          "Chen": "Anna",
+          "Wei": "Anna"
+        }
+      }
+    },
+    "total_rounds": 2,
+    "round_wise_alive_players": {
+      "0": [
+        "Anna",
+        "Chen",
+        "Abhimanyu",
+        "Elise",
+        "Wei",
+        "Luca"
+      ],
+      "1": [
+        "Chen",
+        "Elise",
+        "Wei",
+        "Luca"
+      ]
+    },
+    "last_standing_players": [
+      "Chen",
+      "Elise",
+      "Wei",
+      "Luca"
+    ],
+    "player_errors": {}
+  },
+  "failure_game_stats": null,
+  "running_game_stats": null,
+  "logs": {
+    "Anna": "transcripts/Anna_1731113806_kBY_log.txt",
+    "Chen": "transcripts/Chen_1731113806_kBY_log.txt",
+    "Abhimanyu": "transcripts/Abhimanyu_1731113806_kBY_log.txt",
+    "Elise": "transcripts/Elise_1731113806_kBY_log.txt",
+    "Wei": "transcripts/Wei_1731113806_kBY_log.txt",
+    "Myra": "transcripts/Myra_1731113806_kBY_log.txt",
+    "Luca": "transcripts/Luca_1731113806_kBY_log.txt",
+    "Chagent": "transcripts/Chagent_1731113806_kBY_log.txt"
+  },
+  "transcripts": {
+    "Anna": "transcripts/Anna_1731113806_kBY_transcript.jsonl",
+    "Chen": "transcripts/Chen_1731113806_kBY_transcript.jsonl",
+    "Abhimanyu": "transcripts/Abhimanyu_1731113806_kBY_transcript.jsonl",
+    "Elise": "transcripts/Elise_1731113806_kBY_transcript.jsonl",
+    "Wei": "transcripts/Wei_1731113806_kBY_transcript.jsonl",
+    "Myra": "transcripts/Myra_1731113806_kBY_transcript.jsonl",
+    "Luca": "transcripts/Luca_1731113806_kBY_transcript.jsonl",
+    "Chagent": "transcripts/Chagent_1731113806_kBY_transcript.jsonl"
+  }
+}
