@@ -6,16 +6,12 @@ load_dotenv()
 
 from sentient_campaign.activity_runner.runner import WerewolfCampaignActivityRunner, PlayerAgentConfig
 
-# Create results directory if it doesn't exist
 Path("game_results").mkdir(parents=True, exist_ok=True)
-# Ensure transcripts directory exists
 Path("transcripts").mkdir(parents=True, exist_ok=True)
 
 runner = WerewolfCampaignActivityRunner()
 agent_config = PlayerAgentConfig(
     player_name="Chagent", # select a name for your agent
-                
-    #TODO: IMPORTANT!! After building your agent for the first time, you must update this path:
     agent_wheel_path="/Users/timothygao/Documents/Github/werewolf-template/src/werewolf_agents/cot_sample/dist/chagent-0.1.0-py3-none-any.whl",
     module_path="agent/cot_agent.py",
     agent_class_name="CoTAgent",

@@ -1,0 +1,40 @@
+{
+  "activity_id": "1731197382_wkB",
+  "players": [
+    "Astrid",
+    "Jian",
+    "Emily",
+    "Myra",
+    "Sophie",
+    "Chen",
+    "Ling",
+    "Chagent"
+  ],
+  "game_status": "terminated",
+  "failure_game_stats": {
+    "faulty_players": [
+      "Chagent"
+    ],
+    "termination_code": "AGENT_FAILURE",
+    "termination_reason": "paleyr agent Chagent exited",
+    "traceback": "\"INFO:sentient_agent_runner:Loading agent, parsing the argument\\nINFO:sentient_agent_runner:Parsed command line arguments: werewolf Chagent, 1731197382_wkB, agent/cot_agent.py, CoTAgent, /tmp/Chagent_1731197382_wkB_agent_config.yaml\\nTraceback (most recent call last):\\n  File \\\"/sent_lib/agent_loader/user_agent_loader.py\\\", line 71, in <module>\\n    asyncio.run(run_agent(campaign_name, player_name, activity_id, module_path, class_name, sentient_llm_config, agent_config, messenger_config, transcript_manager_config))\\n  File \\\"/usr/local/lib/python3.12/asyncio/runners.py\\\", line 194, in run\\n    return runner.run(main)\\n           ^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.12/asyncio/runners.py\\\", line 118, in run\\n    return self._loop.run_until_complete(task)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.12/asyncio/base_events.py\\\", line 687, in run_until_complete\\n    return future.result()\\n           ^^^^^^^^^^^^^^^\\n  File \\\"/sent_lib/agent_loader/agent_runner.py\\\", line 185, in run_agent\\n    agent = load_agent_class(module_path, class_name)\\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/sent_lib/agent_loader/agent_runner.py\\\", line 179, in load_agent_class\\n    module = import_module(module_path.replace(\\\"/\\\", \\\".\\\"))\\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.12/importlib/__init__.py\\\", line 90, in import_module\\n    return _bootstrap._gcd_import(name[level:], package, level)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1387, in _gcd_import\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1360, in _find_and_load\\n  File \\\"<frozen importlib._bootstrap>\\\", line 1331, in _find_and_load_unlocked\\n  File \\\"<frozen importlib._bootstrap>\\\", line 935, in _load_unlocked\\n  File \\\"<frozen importlib._bootstrap_external>\\\", line 991, in exec_module\\n  File \\\"<frozen importlib._bootstrap_external>\\\", line 1129, in get_code\\n  File \\\"<frozen importlib._bootstrap_external>\\\", line 1059, in source_to_code\\n  File \\\"<frozen importlib._bootstrap>\\\", line 488, in _call_with_frames_removed\\n  File \\\"/app/venv/lib/python3.12/site-packages/agent/cot_agent.py\\\", line 176\\n    f\\\"You are an expert {self.role} player in a Werewolf game. \\n    ^\\nSyntaxError: unterminated f-string literal (detected at line 176)\\n\""
+  },
+  "logs": {
+    "Astrid": "transcripts/Astrid_1731197382_wkB_log.txt",
+    "Jian": "transcripts/Jian_1731197382_wkB_log.txt",
+    "Emily": "transcripts/Emily_1731197382_wkB_log.txt",
+    "Myra": "transcripts/Myra_1731197382_wkB_log.txt",
+    "Sophie": "transcripts/Sophie_1731197382_wkB_log.txt",
+    "Chen": "transcripts/Chen_1731197382_wkB_log.txt",
+    "Ling": "transcripts/Ling_1731197382_wkB_log.txt"
+  },
+  "transcripts": {
+    "Astrid": "transcripts/Astrid_1731197382_wkB_transcript.jsonl",
+    "Jian": "transcripts/Jian_1731197382_wkB_transcript.jsonl",
+    "Emily": "transcripts/Emily_1731197382_wkB_transcript.jsonl",
+    "Myra": "transcripts/Myra_1731197382_wkB_transcript.jsonl",
+    "Sophie": "transcripts/Sophie_1731197382_wkB_transcript.jsonl",
+    "Chen": "transcripts/Chen_1731197382_wkB_transcript.jsonl",
+    "Ling": "transcripts/Ling_1731197382_wkB_transcript.jsonl"
+  }
+}

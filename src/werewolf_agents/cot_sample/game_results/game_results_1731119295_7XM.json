@@ -1,0 +1,107 @@
+{
+  "activity_id": "1731119295_7XM",
+  "players": [
+    "Chagent",
+    "Akira",
+    "Pietro",
+    "vihaan",
+    "Helga",
+    "Anna",
+    "Abhimanyu",
+    "John"
+  ],
+  "game_status": "ended",
+  "player_roles": {
+    "Anna": "wolf",
+    "Abhimanyu": "wolf",
+    "Pietro": "seer",
+    "Helga": "doctor",
+    "Chagent": "villager",
+    "John": "villager",
+    "Akira": "villager",
+    "vihaan": "villager"
+  },
+  "success_game_stats": {
+    "winner": "WOLVES",
+    "vote_history": {
+      "wolf_votes": {
+        "0": {
+          "Anna": "Pietro",
+          "Abhimanyu": "Pietro"
+        },
+        "1": {
+          "Anna": "Helga",
+          "Abhimanyu": "Helga"
+        }
+      },
+      "doctors_save": {
+        "0": "Akira",
+        "1": "Anna"
+      },
+      "alive_players_votes": {
+        "0": {
+          "John": "Chagent",
+          "Abhimanyu": "John",
+          "Akira": "vihaan",
+          "vihaan": "Akira",
+          "Helga": "Chagent",
+          "Chagent": "Helga",
+          "Anna": "Abhimanyu"
+        },
+        "1": {
+          "Akira": "vihaan",
+          "Anna": "vihaan",
+          "Abhimanyu": "John",
+          "John": "Abhimanyu",
+          "vihaan": "Akira"
+        }
+      }
+    },
+    "total_rounds": 2,
+    "round_wise_alive_players": {
+      "0": [
+        "Akira",
+        "vihaan",
+        "Helga",
+        "Anna",
+        "Abhimanyu",
+        "John"
+      ],
+      "1": [
+        "Akira",
+        "Anna",
+        "Abhimanyu",
+        "John"
+      ]
+    },
+    "last_standing_players": [
+      "Akira",
+      "Anna",
+      "Abhimanyu",
+      "John"
+    ],
+    "player_errors": {}
+  },
+  "failure_game_stats": null,
+  "running_game_stats": null,
+  "logs": {
+    "Akira": "transcripts/Akira_1731119295_7XM_log.txt",
+    "Pietro": "transcripts/Pietro_1731119295_7XM_log.txt",
+    "vihaan": "transcripts/vihaan_1731119295_7XM_log.txt",
+    "Helga": "transcripts/Helga_1731119295_7XM_log.txt",
+    "Anna": "transcripts/Anna_1731119295_7XM_log.txt",
+    "Abhimanyu": "transcripts/Abhimanyu_1731119295_7XM_log.txt",
+    "John": "transcripts/John_1731119295_7XM_log.txt",
+    "Chagent": "transcripts/Chagent_1731119295_7XM_log.txt"
+  },
+  "transcripts": {
+    "Akira": "transcripts/Akira_1731119295_7XM_transcript.jsonl",
+    "Pietro": "transcripts/Pietro_1731119295_7XM_transcript.jsonl",
+    "vihaan": "transcripts/vihaan_1731119295_7XM_transcript.jsonl",
+    "Helga": "transcripts/Helga_1731119295_7XM_transcript.jsonl",
+    "Anna": "transcripts/Anna_1731119295_7XM_transcript.jsonl",
+    "Abhimanyu": "transcripts/Abhimanyu_1731119295_7XM_transcript.jsonl",
+    "John": "transcripts/John_1731119295_7XM_transcript.jsonl",
+    "Chagent": "transcripts/Chagent_1731119295_7XM_transcript.jsonl"
+  }
+}

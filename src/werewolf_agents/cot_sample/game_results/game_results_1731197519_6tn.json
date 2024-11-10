@@ -1,0 +1,42 @@
+{
+  "activity_id": "1731197519_6tn",
+  "players": [
+    "Klaus",
+    "vihaan",
+    "Emily",
+    "Luca",
+    "Wei",
+    "Arjun",
+    "Helga",
+    "Chagent"
+  ],
+  "game_status": "terminated",
+  "failure_game_stats": {
+    "faulty_players": [
+      "Chagent"
+    ],
+    "termination_code": "AGENT_FAILURE",
+    "termination_reason": "paleyr agent Chagent exited",
+    "traceback": "\"    await self._client.sync_forever(\\n  File \\\"/usr/local/lib/python3.12/site-packages/nio/client/base_client.py\\\", line 105, in wrapper\\n    return await func(self, *args, **kwargs)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.12/site-packages/nio/client/async_client.py\\\", line 1330, in sync_forever\\n    await self.run_response_callbacks([await response])\\n                                       ^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.12/asyncio/tasks.py\\\", line 631, in _wait_for_one\\n    return f.result()  # May raise f.exception().\\n           ^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.12/site-packages/nio/client/base_client.py\\\", line 105, in wrapper\\n    return await func(self, *args, **kwargs)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.12/site-packages/nio/client/async_client.py\\\", line 1173, in sync\\n    response = await self._send(\\n               ^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.12/site-packages/nio/client/async_client.py\\\", line 823, in _send\\n    await self.receive_response(resp)\\n  File \\\"/usr/local/lib/python3.12/site-packages/nio/client/async_client.py\\\", line 723, in receive_response\\n    await self._handle_sync(response)\\n  File \\\"/usr/local/lib/python3.12/site-packages/nio/client/async_client.py\\\", line 690, in _handle_sync\\n    await self._handle_joined_rooms(response)\\n  File \\\"/usr/local/lib/python3.12/site-packages/nio/client/async_client.py\\\", line 617, in _handle_joined_rooms\\n    await cb.execute(event, room)\\n  File \\\"/usr/local/lib/python3.12/site-packages/nio/client/base_client.py\\\", line 131, in execute\\n    await result\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_messenger/matrix/client.py\\\", line 236, in _on_any_room_event\\n    await channel.on_room_event(room, event)\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_messenger/matrix/channel.py\\\", line 323, in on_room_event\\n    await self._on_message_event(room, event)\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_messenger/matrix/channel.py\\\", line 488, in _on_message_event\\n    await callback(self, notification_event)\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/adapter/adapter.py\\\", line 43, in listien_for_messages\\n    await self.handle_action(channel, event, event.message)\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/adapter/adapter.py\\\", line 138, in handle_action\\n    await self.activity_actions.notify_action(message.id, message.sender, recipient, action)\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/adapter/actions/werewolf_actions.py\\\", line 150, in notify_action\\n    raise e\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/adapter/actions/werewolf_actions.py\\\", line 144, in notify_action\\n    await getattr(self, action.type)(\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/adapter/actions/werewolf_actions.py\\\", line 281, in introduction\\n    await self._notify_message(message_header, introdution_message)\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/adapter/actions/werewolf_actions.py\\\", line 209, in _notify_message\\n    await player_agent.async_notify(notification_message)\\n  File \\\"/app/venv/lib/python3.12/site-packages/agent/cot_agent.py\\\", line 222, in async_notify\\n    self.add_to_history(f\\\"[From - {message.header.sender}| To - Everyone| Group Message in {message.header.channel}]: {message.content.text}\\\")\\n  File \\\"/app/venv/lib/python3.12/site-packages/agent/cot_agent.py\\\", line 197, in add_to_history\\n    if ans[:2].lower() != 'No':\\n       ~~~^^^^\\nTypeError: 'ChatCompletion' object is not subscriptable\\n\""
+  },
+  "logs": {
+    "Klaus": "transcripts/Klaus_1731197519_6tn_log.txt",
+    "vihaan": "transcripts/vihaan_1731197519_6tn_log.txt",
+    "Emily": "transcripts/Emily_1731197519_6tn_log.txt",
+    "Luca": "transcripts/Luca_1731197519_6tn_log.txt",
+    "Wei": "transcripts/Wei_1731197519_6tn_log.txt",
+    "Arjun": "transcripts/Arjun_1731197519_6tn_log.txt",
+    "Helga": "transcripts/Helga_1731197519_6tn_log.txt",
+    "Chagent": "transcripts/Chagent_1731197519_6tn_log.txt"
+  },
+  "transcripts": {
+    "Klaus": "transcripts/Klaus_1731197519_6tn_transcript.jsonl",
+    "vihaan": "transcripts/vihaan_1731197519_6tn_transcript.jsonl",
+    "Emily": "transcripts/Emily_1731197519_6tn_transcript.jsonl",
+    "Luca": "transcripts/Luca_1731197519_6tn_transcript.jsonl",
+    "Wei": "transcripts/Wei_1731197519_6tn_transcript.jsonl",
+    "Arjun": "transcripts/Arjun_1731197519_6tn_transcript.jsonl",
+    "Helga": "transcripts/Helga_1731197519_6tn_transcript.jsonl",
+    "Chagent": "transcripts/Chagent_1731197519_6tn_transcript.jsonl"
+  }
+}

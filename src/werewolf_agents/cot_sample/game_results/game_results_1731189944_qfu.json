@@ -1,0 +1,42 @@
+{
+  "activity_id": "1731189944_qfu",
+  "players": [
+    "Haruto",
+    "Lars",
+    "Astrid",
+    "Olivia",
+    "Luca",
+    "Anna",
+    "Abhimanyu",
+    "Chagent"
+  ],
+  "game_status": "terminated",
+  "failure_game_stats": {
+    "faulty_players": [
+      "Chagent"
+    ],
+    "termination_code": "AGENT_FAILURE",
+    "termination_reason": "paleyr agent Chagent exited",
+    "traceback": "\"  File \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/adapter/adapter.py\\\", line 133, in handle_action\\n    response: IResponse = await self.activity_actions.respond_action(message.id, message.sender, recipient, action)\\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/adapter/actions/werewolf_actions.py\\\", line 177, in respond_action\\n    raise e\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/adapter/actions/werewolf_actions.py\\\", line 161, in respond_action\\n    response = await getattr(self, action.type)(\\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/adapter/actions/werewolf_actions.py\\\", line 338, in wolf_vote\\n    resp: ActivityResponse = await self._require_response(\\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/adapter/actions/werewolf_actions.py\\\", line 242, in _require_response\\n    response: ActivityResponse = await player_agent.async_respond(message)\\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/app/venv/lib/python3.12/site-packages/agent/cot_agent.py\\\", line 222, in async_respond\\n    response_message = self._get_response_for_wolf_channel_to_kill_villagers(message)\\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/app/venv/lib/python3.12/site-packages/agent/cot_agent.py\\\", line 400, in _get_response_for_wolf_channel_to_kill_villagers\\n    inner_monologue = self._get_inner_monologue(self.WOLF_PROMPT, game_situation, specific_prompt)\\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/app/venv/lib/python3.12/site-packages/agent/cot_agent.py\\\", line 236, in _get_inner_monologue\\n    response = self.openai_client.chat.completions.create(\\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/app/venv/lib/python3.12/site-packages/openai/_utils/_utils.py\\\", line 274, in wrapper\\n    return func(*args, **kwargs)\\n           ^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/app/venv/lib/python3.12/site-packages/openai/resources/chat/completions.py\\\", line 704, in create\\n    return self._post(\\n           ^^^^^^^^^^^\\n  File \\\"/app/venv/lib/python3.12/site-packages/openai/_base_client.py\\\", line 1268, in post\\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/app/venv/lib/python3.12/site-packages/openai/_base_client.py\\\", line 945, in request\\n    return self._request(\\n           ^^^^^^^^^^^^^^\\n  File \\\"/app/venv/lib/python3.12/site-packages/openai/_base_client.py\\\", line 990, in _request\\n    return self._retry_request(\\n           ^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/app/venv/lib/python3.12/site-packages/openai/_base_client.py\\\", line 1083, in _retry_request\\n    return self._request(\\n           ^^^^^^^^^^^^^^\\n  File \\\"/app/venv/lib/python3.12/site-packages/openai/_base_client.py\\\", line 990, in _request\\n    return self._retry_request(\\n           ^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/app/venv/lib/python3.12/site-packages/openai/_base_client.py\\\", line 1083, in _retry_request\\n    return self._request(\\n           ^^^^^^^^^^^^^^\\n  File \\\"/app/venv/lib/python3.12/site-packages/openai/_base_client.py\\\", line 1015, in _request\\n    raise APIConnectionError(request=request) from err\\nopenai.APIConnectionError: Connection error.\\n\""
+  },
+  "logs": {
+    "Haruto": "transcripts/Haruto_1731189944_qfu_log.txt",
+    "Lars": "transcripts/Lars_1731189944_qfu_log.txt",
+    "Astrid": "transcripts/Astrid_1731189944_qfu_log.txt",
+    "Olivia": "transcripts/Olivia_1731189944_qfu_log.txt",
+    "Luca": "transcripts/Luca_1731189944_qfu_log.txt",
+    "Anna": "transcripts/Anna_1731189944_qfu_log.txt",
+    "Abhimanyu": "transcripts/Abhimanyu_1731189944_qfu_log.txt",
+    "Chagent": "transcripts/Chagent_1731189944_qfu_log.txt"
+  },
+  "transcripts": {
+    "Haruto": "transcripts/Haruto_1731189944_qfu_transcript.jsonl",
+    "Lars": "transcripts/Lars_1731189944_qfu_transcript.jsonl",
+    "Astrid": "transcripts/Astrid_1731189944_qfu_transcript.jsonl",
+    "Olivia": "transcripts/Olivia_1731189944_qfu_transcript.jsonl",
+    "Luca": "transcripts/Luca_1731189944_qfu_transcript.jsonl",
+    "Anna": "transcripts/Anna_1731189944_qfu_transcript.jsonl",
+    "Abhimanyu": "transcripts/Abhimanyu_1731189944_qfu_transcript.jsonl",
+    "Chagent": "transcripts/Chagent_1731189944_qfu_transcript.jsonl"
+  }
+}

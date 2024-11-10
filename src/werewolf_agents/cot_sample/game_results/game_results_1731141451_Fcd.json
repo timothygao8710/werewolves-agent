@@ -1,0 +1,123 @@
+{
+  "activity_id": "1731141451_Fcd",
+  "players": [
+    "Chagent",
+    "Sophie",
+    "John",
+    "Arjun",
+    "Kiara",
+    "Hiroshi",
+    "Michael",
+    "Helga"
+  ],
+  "game_status": "ended",
+  "player_roles": {
+    "Sophie": "wolf",
+    "Hiroshi": "wolf",
+    "Michael": "seer",
+    "Arjun": "doctor",
+    "Kiara": "villager",
+    "Chagent": "villager",
+    "Helga": "villager",
+    "John": "villager"
+  },
+  "success_game_stats": {
+    "winner": "VILLAGERS",
+    "vote_history": {
+      "wolf_votes": {
+        "0": {
+          "Sophie": "John",
+          "Hiroshi": "Arjun"
+        },
+        "1": {
+          "Sophie": "Michael",
+          "Hiroshi": "Michael"
+        },
+        "2": {
+          "Sophie": "Michael"
+        }
+      },
+      "doctors_save": {
+        "0": "Kiara",
+        "1": "Michael",
+        "2": "Kiara"
+      },
+      "alive_players_votes": {
+        "0": {
+          "Helga": "Chagent",
+          "Sophie": "Chagent",
+          "Kiara": "Chagent",
+          "Arjun": "Chagent",
+          "Chagent": "Kiara",
+          "Hiroshi": "Chagent",
+          "Michael": "Chagent"
+        },
+        "1": {
+          "Michael": "Hiroshi",
+          "Helga": "Hiroshi",
+          "Hiroshi": "Michael",
+          "Sophie": "Michael",
+          "Kiara": "Hiroshi",
+          "Arjun": "Hiroshi"
+        },
+        "2": {
+          "Sophie": "Helga",
+          "Arjun": "Sophie",
+          "Helga": "Sophie",
+          "Kiara": "Sophie"
+        }
+      }
+    },
+    "total_rounds": 3,
+    "round_wise_alive_players": {
+      "0": [
+        "Sophie",
+        "Arjun",
+        "Kiara",
+        "Hiroshi",
+        "Michael",
+        "Helga"
+      ],
+      "1": [
+        "Sophie",
+        "Arjun",
+        "Kiara",
+        "Michael",
+        "Helga"
+      ],
+      "2": [
+        "Arjun",
+        "Kiara",
+        "Helga"
+      ]
+    },
+    "last_standing_players": [
+      "Arjun",
+      "Kiara",
+      "Helga"
+    ],
+    "player_errors": {}
+  },
+  "failure_game_stats": null,
+  "running_game_stats": null,
+  "logs": {
+    "Sophie": "transcripts/Sophie_1731141451_Fcd_log.txt",
+    "John": "transcripts/John_1731141451_Fcd_log.txt",
+    "Arjun": "transcripts/Arjun_1731141451_Fcd_log.txt",
+    "Kiara": "transcripts/Kiara_1731141451_Fcd_log.txt",
+    "Hiroshi": "transcripts/Hiroshi_1731141451_Fcd_log.txt",
+    "Michael": "transcripts/Michael_1731141451_Fcd_log.txt",
+    "Helga": "transcripts/Helga_1731141451_Fcd_log.txt",
+    "Chagent": "transcripts/Chagent_1731141451_Fcd_log.txt"
+  },
+  "transcripts": {
+    "Sophie": "transcripts/Sophie_1731141451_Fcd_transcript.jsonl",
+    "John": "transcripts/John_1731141451_Fcd_transcript.jsonl",
+    "Arjun": "transcripts/Arjun_1731141451_Fcd_transcript.jsonl",
+    "Kiara": "transcripts/Kiara_1731141451_Fcd_transcript.jsonl",
+    "Hiroshi": "transcripts/Hiroshi_1731141451_Fcd_transcript.jsonl",
+    "Michael": "transcripts/Michael_1731141451_Fcd_transcript.jsonl",
+    "Helga": "transcripts/Helga_1731141451_Fcd_transcript.jsonl",
+    "Chagent": "transcripts/Chagent_1731141451_Fcd_transcript.jsonl"
+  }
+}
