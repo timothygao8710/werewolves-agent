@@ -1,0 +1,57 @@
+{
+  "activity_id": "1731202143_g0O",
+  "players": [
+    "Chagent",
+    "Yuki",
+    "Pietro",
+    "Sophie",
+    "Luca",
+    "Ramesh",
+    "vihaan",
+    "Ling"
+  ],
+  "game_status": "terminated",
+  "player_roles": {
+    "Luca": "wolf",
+    "Pietro": "wolf",
+    "Chagent": "seer",
+    "Sophie": "doctor",
+    "Ramesh": "villager",
+    "Yuki": "villager",
+    "vihaan": "villager",
+    "Ling": "villager"
+  },
+  "total_rounds": 0,
+  "player_errors": {},
+  "success_game_stats": null,
+  "failure_game_stats": {
+    "faulty_players": [
+      "Chagent"
+    ],
+    "termination_code": "TIMEOUT_WAIT_FOR_ACK",
+    "termination_reason": "Looks like player Chagent is down",
+    "traceback": "{\"first_500\": \"Traceback (most recent call last):\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/werewolf_controller/game_logic.py\\\", line 1054, in send_day_elimination_vote_message\\n    response_message = await self.game_communication_helper.wait_and_get_action_response_message(\\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/app/controller_loader/proxy_game_communication_helper.py\\\", line 206, in wait_and_get_action_response_message\\n \", \"last_500\": \" \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/werewolf_controller/controller.py\\\", line 263, in on_enter_DAY_D3\\n    await self.game_logics.send_day_elimination_vote_message(self.game_model)\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/werewolf_controller/game_logic.py\\\", line 1108, in send_day_elimination_vote_message\\n    raise WaitTimeExceededForPlayer(\\nsentient_campaign.werewolf_controller.exceptions.WaitTimeExceededForPlayer: Looks like player Chagent is down\\n\"}"
+  },
+  "running_game_stats": null,
+  "logs": {
+    "Yuki": "transcripts/Yuki_1731202143_g0O_log.txt",
+    "Pietro": "transcripts/Pietro_1731202143_g0O_log.txt",
+    "Sophie": "transcripts/Sophie_1731202143_g0O_log.txt",
+    "Luca": "transcripts/Luca_1731202143_g0O_log.txt",
+    "Ramesh": "transcripts/Ramesh_1731202143_g0O_log.txt",
+    "vihaan": "transcripts/vihaan_1731202143_g0O_log.txt",
+    "Ling": "transcripts/Ling_1731202143_g0O_log.txt",
+    "Chagent": "transcripts/Chagent_1731202143_g0O_log.txt"
+  },
+  "transcripts": {
+    "Yuki": "transcripts/Yuki_1731202143_g0O_transcript.jsonl",
+    "Pietro": "transcripts/Pietro_1731202143_g0O_transcript.jsonl",
+    "Sophie": "transcripts/Sophie_1731202143_g0O_transcript.jsonl",
+    "Luca": "transcripts/Luca_1731202143_g0O_transcript.jsonl",
+    "Ramesh": "transcripts/Ramesh_1731202143_g0O_transcript.jsonl",
+    "vihaan": "transcripts/vihaan_1731202143_g0O_transcript.jsonl",
+    "Ling": "transcripts/Ling_1731202143_g0O_transcript.jsonl",
+    "Chagent": "transcripts/Chagent_1731202143_g0O_transcript.jsonl"
+  },
+  "controller_log": "transcripts/1731202143_g0O_game_controller_log.txt"
+}

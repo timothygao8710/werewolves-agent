@@ -1,0 +1,119 @@
+{
+  "activity_id": "1731183066_0Zh",
+  "players": [
+    "James",
+    "Ramesh",
+    "Fredrik",
+    "Sophie",
+    "Yuki",
+    "Emma",
+    "Myra",
+    "Wei"
+  ],
+  "game_status": "ended",
+  "player_roles": {
+    "Yuki": "wolf",
+    "James": "wolf",
+    "Myra": "seer",
+    "Emma": "doctor",
+    "Ramesh": "villager",
+    "Wei": "villager",
+    "Sophie": "villager",
+    "Fredrik": "villager"
+  },
+  "total_rounds": 3,
+  "player_errors": {},
+  "success_game_stats": {
+    "winner": "VILLAGERS",
+    "vote_history": {
+      "wolf_votes": {
+        "0": {
+          "James": "Ramesh",
+          "Yuki": "Fredrik"
+        },
+        "1": {
+          "James": "Myra"
+        },
+        "2": {
+          "James": "Wei"
+        }
+      },
+      "doctors_save": {
+        "0": "Sophie",
+        "1": "Sophie",
+        "2": null
+      },
+      "alive_players_votes": {
+        "0": {
+          "Wei": "Yuki",
+          "Myra": "Yuki",
+          "James": "Yuki",
+          "Yuki": "James",
+          "Emma": "James",
+          "Sophie": "James",
+          "Fredrik": "Yuki"
+        },
+        "1": {
+          "Sophie": "Emma",
+          "Emma": "Wei",
+          "Wei": "Emma",
+          "Fredrik": "James",
+          "James": "Fredrik"
+        },
+        "2": {
+          "Fredrik": "James",
+          "James": "Fredrik",
+          "Sophie": "James"
+        }
+      }
+    },
+    "total_rounds": 3,
+    "round_wise_alive_players": {
+      "0": [
+        "James",
+        "Fredrik",
+        "Sophie",
+        "Emma",
+        "Myra",
+        "Wei"
+      ],
+      "1": [
+        "James",
+        "Fredrik",
+        "Sophie",
+        "Wei"
+      ],
+      "2": [
+        "Fredrik",
+        "Sophie"
+      ]
+    },
+    "last_standing_players": [
+      "Fredrik",
+      "Sophie"
+    ]
+  },
+  "failure_game_stats": null,
+  "running_game_stats": null,
+  "logs": {
+    "Ramesh": "transcripts/Ramesh_1731183066_0Zh_log.txt",
+    "Fredrik": "transcripts/Fredrik_1731183066_0Zh_log.txt",
+    "Sophie": "transcripts/Sophie_1731183066_0Zh_log.txt",
+    "Yuki": "transcripts/Yuki_1731183066_0Zh_log.txt",
+    "Emma": "transcripts/Emma_1731183066_0Zh_log.txt",
+    "Myra": "transcripts/Myra_1731183066_0Zh_log.txt",
+    "Wei": "transcripts/Wei_1731183066_0Zh_log.txt",
+    "James": "transcripts/James_1731183066_0Zh_log.txt"
+  },
+  "transcripts": {
+    "Ramesh": "transcripts/Ramesh_1731183066_0Zh_transcript.jsonl",
+    "Fredrik": "transcripts/Fredrik_1731183066_0Zh_transcript.jsonl",
+    "Sophie": "transcripts/Sophie_1731183066_0Zh_transcript.jsonl",
+    "Yuki": "transcripts/Yuki_1731183066_0Zh_transcript.jsonl",
+    "Emma": "transcripts/Emma_1731183066_0Zh_transcript.jsonl",
+    "Myra": "transcripts/Myra_1731183066_0Zh_transcript.jsonl",
+    "Wei": "transcripts/Wei_1731183066_0Zh_transcript.jsonl",
+    "James": "transcripts/James_1731183066_0Zh_transcript.jsonl"
+  },
+  "controller_log": "transcripts/1731183066_0Zh_game_controller_log.txt"
+}

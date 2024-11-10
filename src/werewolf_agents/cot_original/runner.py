@@ -16,7 +16,7 @@ agent_config = PlayerAgentConfig(
     player_name="George W. Bush (United States President)", # select a name for your agent
                 
     #TODO: IMPORTANT!! After building your agent for the first time, you must update this path:
-    agent_wheel_path="/Users/timothygao/Documents/Github/werewolf-template/src/werewolf_agents/COT_MOD/dist/chagent-0.1.0-py3-none-any.whl",
+    agent_wheel_path="/Users/granthough/Documents/GitHub/werewolves-agent/src/werewolf_agents/cot_original/dist/chagent-0.1.0-py3-none-any.whl",
     module_path="agent/cot_agent.py",
     agent_class_name="CoTAgent",
     agent_config_file_path="config.yaml" 

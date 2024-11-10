@@ -10,7 +10,7 @@ packages = [{include = "agent"}]  # Add the name of your agent directory here
 autogen = "0.3.1"
 python = "^3.12"
 tenacity = "^9.0.0"
-openai = "^1.47.1"
+openai = "^1.52.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

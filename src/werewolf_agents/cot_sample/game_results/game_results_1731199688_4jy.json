@@ -1,0 +1,55 @@
+{
+  "activity_id": "1731199688_4jy",
+  "players": [
+    "Chagent",
+    "Helga",
+    "Haruto",
+    "Myra",
+    "Kiara",
+    "Michael",
+    "Ananya",
+    "Anna"
+  ],
+  "game_status": "terminated",
+  "player_roles": {
+    "Chagent": "wolf",
+    "Helga": "wolf",
+    "Michael": "seer",
+    "Ananya": "doctor",
+    "Myra": "villager",
+    "Anna": "villager",
+    "Kiara": "villager",
+    "Haruto": "villager"
+  },
+  "total_rounds": 0,
+  "player_errors": {},
+  "success_game_stats": null,
+  "failure_game_stats": {
+    "faulty_players": [],
+    "termination_code": "INTERNAL_ERROR",
+    "termination_reason": "Not all players acked",
+    "traceback": "{\"first_500\": \"Traceback (most recent call last):\\n  File \\\"/app/controller_loader/controller_loader.py\\\", line 697, in main\\n    await controller_runner_task\\n  File \\\"/app/controller_loader/controller_loader.py\\\", line 568, in run_controller\\n    await werewolf_game_machine.run_game()\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/werewolf_controller/controller.py\\\", line 281, in run_game\\n    await self._machine.trigger_event(self,\\\"start\\\")\\n  File \\\"/usr/local/lib/python3.12/site-packages/transitions\", \"last_500\": \"r.wait_for_command_ack(\\n  File \\\"/app/controller_loader/proxy_game_communication_helper.py\\\", line 142, in wrapper\\n    result = await method(*args, **kwargs)\\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"/usr/local/lib/python3.12/site-packages/sentient_campaign/werewolf_controller/game_communication_helper.py\\\", line 82, in wait_for_command_ack\\n    raise WaitTimeExceededError(\\\"Not all players acked\\\")\\nsentient_campaign.werewolf_controller.exceptions.WaitTimeExceededError: Not all players acked\\n\"}"
+  },
+  "running_game_stats": null,
+  "logs": {
+    "Helga": "transcripts/Helga_1731199688_4jy_log.txt",
+    "Haruto": "transcripts/Haruto_1731199688_4jy_log.txt",
+    "Myra": "transcripts/Myra_1731199688_4jy_log.txt",
+    "Kiara": "transcripts/Kiara_1731199688_4jy_log.txt",
+    "Michael": "transcripts/Michael_1731199688_4jy_log.txt",
+    "Ananya": "transcripts/Ananya_1731199688_4jy_log.txt",
+    "Anna": "transcripts/Anna_1731199688_4jy_log.txt",
+    "Chagent": "transcripts/Chagent_1731199688_4jy_log.txt"
+  },
+  "transcripts": {
+    "Helga": "transcripts/Helga_1731199688_4jy_transcript.jsonl",
+    "Haruto": "transcripts/Haruto_1731199688_4jy_transcript.jsonl",
+    "Myra": "transcripts/Myra_1731199688_4jy_transcript.jsonl",
+    "Kiara": "transcripts/Kiara_1731199688_4jy_transcript.jsonl",
+    "Michael": "transcripts/Michael_1731199688_4jy_transcript.jsonl",
+    "Ananya": "transcripts/Ananya_1731199688_4jy_transcript.jsonl",
+    "Anna": "transcripts/Anna_1731199688_4jy_transcript.jsonl",
+    "Chagent": "transcripts/Chagent_1731199688_4jy_transcript.jsonl"
+  },
+  "controller_log": "transcripts/1731199688_4jy_game_controller_log.txt"
+}

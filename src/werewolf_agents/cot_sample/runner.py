@@ -12,7 +12,7 @@ Path("transcripts").mkdir(parents=True, exist_ok=True)
 runner = WerewolfCampaignActivityRunner()
 agent_config = PlayerAgentConfig(
     player_name="Chagent", # select a name for your agent
-    agent_wheel_path="/Users/timothygao/Documents/Github/werewolf-template/src/werewolf_agents/cot_sample/dist/chagent-0.1.0-py3-none-any.whl",
+    agent_wheel_path="/Users/granthough/Documents/GitHub/werewolves-agent/src/werewolf_agents/cot_sample/dist/chagent-0.1.0-py3-none-any.whl",
     module_path="agent/cot_agent.py",
     agent_class_name="CoTAgent",
     agent_config_file_path="config.yaml" 
